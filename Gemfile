@@ -16,7 +16,7 @@ group :development do
   gem "rexical", "1.0.8"
 
   # tests
-  gem "minitest", "6.0.1"
+  gem "minitest", RUBY_VERSION < "3.2" ? "~> 5.25.5" : "6.0.1"
   gem "minitest-mock", "5.27.0"
   gem "minitest-parallel_fork", "2.1.1"
   gem "ruby_memcheck", "3.0.0"
